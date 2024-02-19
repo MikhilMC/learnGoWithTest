@@ -15,3 +15,14 @@ func SumOrdinaryForLoop(numbers [5]int) int {
 	}
 	return sum
 }
+
+func SumAll(numbersToSum ...[]int) []int {
+	lengthOfNumbers := len(numbersToSum)
+	sum := make([]int, lengthOfNumbers)
+
+	for i, numbers := range numbersToSum {
+		sum[i] = Sum(numbers)
+	}
+
+	return sum
+}
