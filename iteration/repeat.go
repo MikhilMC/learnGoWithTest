@@ -1,8 +1,8 @@
 package iteration
 
-const repeatedCount = 5
+import "fmt"
 
-func Repeat(character string) string {
+func Repeat(character string, repeatedCount int) string {
 	var repeated string
 
 	for i := 0; i < repeatedCount; i++ {
@@ -10,4 +10,10 @@ func Repeat(character string) string {
 	}
 
 	return repeated
+}
+
+func ExampleRepeat() {
+	character := "a"
+	count := 6
+	fmt.Println(Repeat(character, count))
 }

@@ -6,4 +6,6 @@
 
 ### 2. [integers](./integers/)
 
+### 3. [iteration](./iteration/)
+
 [1]: https://quii.gitbook.io/learn-go-with-tests/ "Learn Go with tests"
