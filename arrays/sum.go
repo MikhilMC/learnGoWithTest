@@ -18,11 +18,11 @@ func SumOrdinaryForLoop(numbers [5]int) int {
 
 func SumAll(numbersToSum ...[]int) []int {
 	lengthOfNumbers := len(numbersToSum)
-	sum := make([]int, lengthOfNumbers)
+	sums := make([]int, lengthOfNumbers)
 
 	for i, numbers := range numbersToSum {
-		sum[i] = Sum(numbers)
+		sums[i] = Sum(numbers)
 	}
 
-	return sum
+	return sums
 }
