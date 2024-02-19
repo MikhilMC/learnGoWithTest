@@ -8,4 +8,6 @@
 
 ### 3. [iteration](./iteration/)
 
+### 4. [arrays](./arrays/)
+
 [1]: https://quii.gitbook.io/learn-go-with-tests/ "Learn Go with tests"
