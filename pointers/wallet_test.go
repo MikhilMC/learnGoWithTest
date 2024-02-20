@@ -30,6 +30,14 @@ func TestWalllet(t *testing.T) {
 		assertError(t, err, ErrInsufficientFunds)
 		assertBalance(t, wallet, startingBalance)
 	})
+
+	t.Run("String", func(t *testing.T) {
+		a := Bitcoin(10)
+		b := "10 BTC"
+		if a.String() != b {
+			t.Errorf("a = %s, b = %s", a, b)
+		}
+	})
 }
 
 func assertBalance(t testing.TB, wallet Wallet, want Bitcoin) {
