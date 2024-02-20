@@ -34,13 +34,20 @@ func TestArea(t *testing.T) {
 		checkArea(t, circle, want)
 	})
 
+	t.Run("triangle", func(t *testing.T) {
+		triangle := Triangle{12, 6}
+		want := 36.0
+		checkArea(t, triangle, want)
+	})
+
 	t.Run("Further refactoring", func(t *testing.T) {
 		areaTests := []struct {
 			shape Shape
 			want  float64
 		}{
-			{Rectangle{12, 6}, 72.0},
-			{Cirle{10}, 314.1592653589793},
+			{shape: Rectangle{12, 6}, want: 72.0},
+			{shape: Cirle{10}, want: 314.1592653589793},
+			{shape: Triangle{12, 6}, want: 36.0},
 		}
 
 		for _, tt := range areaTests {
