@@ -14,4 +14,6 @@
 
 ### 6. [pointers](./pointers/)
 
+### 7. [maps](./maps/)
+
 [1]: https://quii.gitbook.io/learn-go-with-tests/ "Learn Go with tests"
