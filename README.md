@@ -16,4 +16,6 @@
 
 ### 7. [maps](./maps/)
 
+### 8. [di](./di/)
+
 [1]: https://quii.gitbook.io/learn-go-with-tests/ "Learn Go with tests"
