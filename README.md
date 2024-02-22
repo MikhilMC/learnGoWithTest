@@ -18,4 +18,6 @@
 
 ### 8. [di](./di/)
 
+### 9. [mocking](./mocking/)
+
 [1]: https://quii.gitbook.io/learn-go-with-tests/ "Learn Go with tests"
